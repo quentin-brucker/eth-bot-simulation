@@ -2,14 +2,14 @@
 
 La stratégie de départ : croisement des moyennes 10 et 30 jours.
 
-Mis à jour le **15 nov. 2026 à 14 h 01** (heure de Montréal). Le bot se réveille environ toutes les 30 minutes ; GitHub a souvent du retard.
+Mis à jour le **15 nov. 2026 à 15 h 19** (heure de Montréal). Le bot se réveille environ toutes les 30 minutes ; GitHub a souvent du retard.
 
 | | |
 |---|---|
 | Statut | ⚪ **Hors position** (en attente d'un signal d'achat) |
 | Valeur du bot | **200,00 $** (+0,0 % depuis le départ) |
-| Si tu avais acheté et gardé | 200,37 $ (+0,2 %) |
-| Prix ETH/CAD | 2 598,61 $ |
+| Si tu avais acheté et gardé | 200,61 $ (+0,3 %) |
+| Prix ETH/CAD | 2 601,74 $ |
 | Transactions | 0 · frais payés : 0,00 $ |
 
 ## Prochain signal
@@ -35,6 +35,7 @@ Aucune transaction pour l'instant.
 
 | Heure | Prix | Position | Valeur |
 |---|---|---|---|
+| 15 nov. 15 h 19 | 2 601,74 $ | Hors position | 200,00 $ |
 | 15 nov. 14 h 01 | 2 598,61 $ | Hors position | 200,00 $ |
 | 15 nov. 10 h 51 | 2 594,59 $ | Hors position | 200,00 $ |
 | 15 nov. 10 h 08 | 2 580,35 $ | Hors position | 200,00 $ |
