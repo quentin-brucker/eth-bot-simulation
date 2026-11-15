@@ -1,0 +1,6 @@
+cles.env
+.env
+state_live.json
+data.csv
+STOP
+__pycache__/
