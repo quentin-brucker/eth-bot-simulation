@@ -1,4 +1,4 @@
-name: Simulation bot ETH
+name: Simulation des bots
 
 on:
   schedule:
@@ -29,15 +29,12 @@ jobs:
       - name: Installer la bibliothèque
         run: pip install -r requirements.txt
 
-      - name: Un passage du bot (argent fictif)
+      - name: Un passage de chaque simulation (argent fictif)
         shell: bash
         run: |
           set -o pipefail
-          python bot.py paper --once 2>&1 | tee -a journal.txt
-
-      - name: Mettre à jour le tableau de bord
-        continue-on-error: true
-        run: python dashboard.py
+          python multi.py 2>&1 | tee -a journal.txt
+          tail -n 3000 journal.txt > journal.tmp && mv journal.tmp journal.txt
 
       - name: Enregistrer l'état et le journal
         if: always()
