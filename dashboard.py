@@ -17,7 +17,6 @@ from datetime import datetime, timezone, timedelta
 
 import bot
 
-HERE = bot.HERE
 MOIS = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
 
 try:
@@ -63,7 +62,7 @@ def parse_iso(s):
 # Fichiers
 # --------------------------------------------------------------------------
 def path(name):
-    return os.path.join(HERE, name)
+    return os.path.join(bot.HERE, name)   # bot.HERE change selon la simulation
 
 
 def load_state():
@@ -211,6 +210,9 @@ def write_svg(name, svg):
 def build(ex, cfg, now=None):
     now = now or datetime.now(timezone.utc)
     sym, nf, ns = cfg["symbol"], cfg["fast"], cfg["slow"]
+    base = sym.split("/")[0]
+    title = cfg.get("label") or f"Bot {base}"
+    nt = int(cfg.get("trend_days") or 0)        # filtre de fond : 0 = désactivé
     ex.load_markets()
     _, taker = bot.get_fees(ex, cfg, False)
     candles = ex.fetch_ohlcv(sym, cfg["timeframe"], limit=cfg.get("history_bars", 200))
@@ -220,6 +222,8 @@ def build(ex, cfg, now=None):
     fast_s = bot.sma_series(closes, nf)
     slow_s = bot.sma_series(closes, ns)
     f, s = fast_s[-1], slow_s[-1]
+    trend_s = bot.sma_series(closes, nt) if nt else None
+    trend_now = trend_s[-1] if trend_s else None
 
     state = load_state()
     cash = float(state.get("cash", cfg["budget"]))
@@ -254,11 +258,15 @@ def build(ex, cfg, now=None):
         tt = parse_iso(t["date"]).timestamp()
         if tt >= t_first:
             marks.append((tt, float(t["prix"]), "achat" if t["cote"] == "achat" else "vente"))
-    svg1 = chart_svg([
-        {"name": "Prix ETH/CAD", "color": "#1f2328", "points": price_pts, "width": 2},
+    lines = [
+        {"name": f"Prix {sym}", "color": "#1f2328", "points": price_pts, "width": 2},
         {"name": f"Moyenne {nf} jours", "color": "#0969da", "points": fast_pts},
         {"name": f"Moyenne {ns} jours", "color": "#bf8700", "points": slow_pts},
-    ], marks, title=f"Prix et moyennes, {n} derniers jours")
+    ]
+    if trend_s:
+        lines.append({"name": f"Moyenne {nt} jours (filtre)", "color": "#8250df", "dash": True,
+                      "points": [(ts(closed[i]), trend_s[i]) for i in range(first, len(closed)) if trend_s[i] is not None]})
+    svg1 = chart_svg(lines, marks, title=f"Prix et moyennes, {n} derniers jours")
     if svg1:
         write_svg("prix.svg", svg1)
 
@@ -287,16 +295,25 @@ def build(ex, cfg, now=None):
     elif not in_pos:
         k = 1 + cfg["min_gap_pct"] / 100.0
         p_star = cross_price(closes, nf, ns, k)
+        if nt and trend_now is not None:
+            # prix de clôture minimal pour finir au-dessus de la moyenne longue (qui inclura cette clôture)
+            p_trend = sum(closes[-(nt - 1):]) / (nt - 1)
+            sig.append(f"- Filtre de fond : le prix doit aussi être au-dessus de sa moyenne {nt} jours "
+                       f"(**{money(trend_now, 0)}**). En ce moment, il est "
+                       f"**{'au-dessus' if price > trend_now else 'en dessous'}**.")
+            if p_star is not None:
+                p_star = max(p_star, p_trend)
         if state.get("armed") is False:
             sig.append("- Le marché était déjà en hausse au démarrage : le bot attend que la moyenne courte "
                        "repasse sous la longue, puis remonte, avant d'acheter.")
         elif p_star is None or p_star > price * 1.5:
             sig.append(f"- Un signal d'achat dès ce soir est **impossible** : il faudra plusieurs jours de hausse "
-                       f"pour que la moyenne {nf} jours remonte au-dessus de la moyenne {ns} jours.")
+                       f"pour que la moyenne {nf} jours remonte au-dessus de la moyenne {ns} jours"
+                       + (f" et que le prix repasse au-dessus de sa moyenne {nt} jours." if nt else "."))
         elif p_star <= 0:
             sig.append(f"- Le signal d'achat sera donné à la clôture de ce soir ({close_txt}).")
         else:
-            sig.append(f"- Pour un **signal d'achat** à la clôture de ce soir ({close_txt}), l'ETH devrait finir la journée "
+            sig.append(f"- Pour un **signal d'achat** à la clôture de ce soir ({close_txt}), le prix devrait finir la journée "
                        f"au-dessus de **{money(p_star, 0)}** (prix actuel {money(price, 0)}, soit {pct((p_star / price - 1) * 100)}).")
         bars = state.get("bars_since_exit", 999)
         if bars < cfg["cooldown_bars"]:
@@ -310,25 +327,27 @@ def build(ex, cfg, now=None):
                        f"({pct((stop / price - 1) * 100)} par rapport à maintenant).")
         p_sell = cross_price(closes, nf, ns, 1.0)
         if p_sell and p_sell > 0:
-            sig.append(f"- **Signal de vente** à la clôture de ce soir ({close_txt}) si l'ETH finit la journée "
+            sig.append(f"- **Signal de vente** à la clôture de ce soir ({close_txt}) si le prix finit la journée "
                        f"sous **{money(p_sell, 0)}**.")
         else:
             sig.append(f"- Aucun signal de vente possible ce soir : la tendance reste nettement à la hausse. "
                        f"Seul le stop-loss peut déclencher une vente.")
 
     # ---- README
-    status = "🟢 **En position** (le bot détient de l'ETH)" if in_pos else "⚪ **Hors position** (en attente d'un signal d'achat)"
+    status = f"🟢 **En position** (le bot détient du {base})" if in_pos else "⚪ **Hors position** (en attente d'un signal d'achat)"
     if state.get("halted"):
         status = "⛔ **Arrêté par le coupe-circuit**"
     md = []
-    md.append("# Bot ETH : simulation (argent fictif)\n")
+    md.append(f"# {title} : simulation (argent fictif)\n")
+    if cfg.get("description"):
+        md.append(cfg["description"] + "\n")
     md.append(f"Mis à jour le **{fmt_dt(now)}** (heure de Montréal). "
               "Le bot se réveille environ toutes les 30 minutes ; GitHub a souvent du retard.\n")
     md.append("| | |\n|---|---|")
     md.append(f"| Statut | {status} |")
     md.append(f"| Valeur du bot | **{money(equity)}** ({pct((equity / start_equity - 1) * 100)} depuis le départ) |")
     md.append(f"| Si tu avais acheté et gardé | {money(hold)} ({pct((hold / start_equity - 1) * 100)}) |")
-    md.append(f"| Prix ETH/CAD | {money(price)} |")
+    md.append(f"| Prix {sym} | {money(price)} |")
     md.append(f"| Transactions | {len(trades)} · frais payés : {money(fees)} |")
     md.append("")
     md.append("## Prochain signal\n")
@@ -343,7 +362,7 @@ def build(ex, cfg, now=None):
               "_Le graphique apparaîtra après le deuxième réveil._\n")
     md.append("## Transactions\n")
     if trades:
-        md.append("| Date | Côté | Prix | Quantité ETH | Frais |\n|---|---|---|---|---|")
+        md.append("| Date | Côté | Prix | Quantité | Frais |\n|---|---|---|---|---|")
         for t in reversed(trades):
             md.append(f"| {fmt_short(parse_iso(t['date']))} | {'🟢 Achat' if t['cote'] == 'achat' else '🔴 Vente'} | "
                       f"{money(float(t['prix']))} | {str(round(float(t['quantite']), 6)).replace('.', ',')} | {money(float(t['frais']))} |")
@@ -357,11 +376,15 @@ def build(ex, cfg, now=None):
                   f"{'En position' if h['en_position'] == '1' else 'Hors position'} | {money(float(h['valeur']))} |")
     md.append("")
     md.append("---")
-    md.append(f"Simulation avec 200 $ fictifs, frais de {str(round(taker * 100, 2)).replace('.', ',')} % par transaction inclus. "
-              "Ce n'est pas un conseil financier. Instructions : [LISEZ-MOI.md](LISEZ-MOI.md)")
+    up = "../" if cfg.get("home_link") else ""
+    md.append(f"Simulation avec {money(start_equity, 0)} fictifs, frais de {str(round(taker * 100, 2)).replace('.', ',')} % "
+              f"par transaction inclus. Ce n'est pas un conseil financier. Instructions : [LISEZ-MOI.md]({up}LISEZ-MOI.md)"
+              + (f" · [Retour au résumé]({cfg['home_link']})" if cfg.get("home_link") else ""))
     with open(path("README.md"), "w", encoding="utf-8") as fh:
         fh.write("\n".join(md) + "\n")
     print(f"Tableau de bord mis à jour : valeur {equity:.2f}, prix {price:.2f}, {len(hist)} réveils enregistrés.")
+    return {"equity": equity, "hold": hold, "start": start_equity, "price": price, "in_pos": in_pos,
+            "halted": bool(state.get("halted")), "trades": len(trades), "fees": fees, "sym": sym}
 
 
 def main():
