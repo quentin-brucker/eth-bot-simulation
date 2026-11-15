@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect x="0.5" y="0.5" width="899" height="339" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+<text x="78" y="24" font-size="15" font-weight="600" fill="#1f2328">Valeur de chaque simulation</text>
+<line x1="78" y1="42" x2="100" y2="42" stroke="#1a7f37" stroke-width="2.5"/>
+<text x="106" y="46" font-size="12" fill="#57606a">ETH, bot actuel</text>
+<line x1="223" y1="42" x2="245" y2="42" stroke="#0969da" stroke-width="2.5"/>
+<text x="251" y="46" font-size="12" fill="#57606a">ETH avec filtre de fond</text>
+<line x1="424" y1="42" x2="446" y2="42" stroke="#bf8700" stroke-width="2.5"/>
+<text x="452" y="46" font-size="12" fill="#57606a">SOL avec filtre de fond</text>
+<line x1="78" y1="302.0" x2="882" y2="302.0" stroke="#eaeef2"/>
+<text x="70" y="306.0" font-size="11" fill="#57606a" text-anchor="end">196 $</text>
+<line x1="78" y1="241.0" x2="882" y2="241.0" stroke="#eaeef2"/>
+<text x="70" y="245.0" font-size="11" fill="#57606a" text-anchor="end">198 $</text>
+<line x1="78" y1="180.0" x2="882" y2="180.0" stroke="#eaeef2"/>
+<text x="70" y="184.0" font-size="11" fill="#57606a" text-anchor="end">200 $</text>
+<line x1="78" y1="119.0" x2="882" y2="119.0" stroke="#eaeef2"/>
+<text x="70" y="123.0" font-size="11" fill="#57606a" text-anchor="end">202 $</text>
+<line x1="78" y1="58.0" x2="882" y2="58.0" stroke="#eaeef2"/>
+<text x="70" y="62.0" font-size="11" fill="#57606a" text-anchor="end">204 $</text>
+<text x="78.0" y="326" font-size="11" fill="#57606a" text-anchor="start">10 h 08</text>
+<text x="238.8" y="326" font-size="11" fill="#57606a" text-anchor="middle">10 h 17</text>
+<text x="399.6" y="326" font-size="11" fill="#57606a" text-anchor="middle">10 h 25</text>
+<text x="560.4" y="326" font-size="11" fill="#57606a" text-anchor="middle">10 h 34</text>
+<text x="721.2" y="326" font-size="11" fill="#57606a" text-anchor="middle">10 h 42</text>
+<text x="882.0" y="326" font-size="11" fill="#57606a" text-anchor="end">10 h 51</text>
+<polyline points="78.0,180.0 879.2,180.0" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>

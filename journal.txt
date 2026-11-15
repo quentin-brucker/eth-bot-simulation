@@ -1,3 +1,18 @@
 [2026-11-15 10:08:18] Mode PAPER | ETH/CAD | bougies 1d | frais maker 0.16 % / taker 0.26 %
 [2026-11-15 10:08:20] Premier lancement. Valeur de départ : 200.00. En attente d'un signal d'achat.
 [2026-11-15 10:08:20] Prix 2580.35 | moyennes 2947.08/3180.45 | hors position | valeur 200.00
+Ancienne simulation ETH déplacée dans le dossier eth/.
+=== ETH, bot actuel ===
+[2026-11-15 10:51:25] Mode PAPER | ETH/CAD | bougies 1d | frais maker 0.16 % / taker 0.26 %
+[2026-11-15 10:51:27] Prix 2594.59 | moyennes 2947.08/3180.45 | hors position | valeur 200.00
+Tableau de bord mis à jour : valeur 200.00, prix 2594.59, 2 réveils enregistrés.
+=== ETH avec filtre de fond ===
+[2026-11-15 10:51:29] Mode PAPER | ETH/CAD | bougies 1d | frais maker 0.16 % / taker 0.26 %
+[2026-11-15 10:51:32] Premier lancement. Valeur de départ : 200.00. En attente d'un signal d'achat.
+[2026-11-15 10:51:32] Prix 2594.59 | moyennes 2947.08/3180.45 | hors position | valeur 200.00
+Tableau de bord mis à jour : valeur 200.00, prix 2594.59, 1 réveils enregistrés.
+=== SOL avec filtre de fond ===
+[2026-11-15 10:51:34] Mode PAPER | SOL/CAD | bougies 1d | frais maker 0.16 % / taker 0.26 %
+[2026-11-15 10:51:36] Premier lancement. Valeur de départ : 200.00. En attente d'un signal d'achat.
+[2026-11-15 10:51:36] Prix 102.00 | moyennes 118.81/133.43 | hors position | valeur 200.00
+Tableau de bord mis à jour : valeur 200.00, prix 102.00, 1 réveils enregistrés.

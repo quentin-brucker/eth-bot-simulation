@@ -1,39 +1,28 @@
-# Bot ETH : simulation (argent fictif)
+# Simulations du bot (argent fictif)
 
-Mis à jour le **15 nov. 2026 à 10 h 08** (heure de Montréal). Le bot se réveille environ toutes les 30 minutes ; GitHub a souvent du retard.
+Mis à jour le **15 nov. 2026 à 10 h 51** (heure de Montréal). Les bots se réveillent environ toutes les 30 minutes ; GitHub a souvent du retard.
 
-| | |
-|---|---|
-| Statut | ⚪ **Hors position** (en attente d'un signal d'achat) |
-| Valeur du bot | **200,00 $** (+0,0 % depuis le départ) |
-| Si tu avais acheté et gardé | 198,96 $ (−0,5 %) |
-| Prix ETH/CAD | 2 580,35 $ |
-| Transactions | 0 · frais payés : 0,00 $ |
+| Simulation | Statut | Valeur | Si tu avais acheté et gardé | Transactions |
+|---|---|---|---|---|
+| [**ETH, bot actuel**](eth/README.md) | ⚪ Hors position | **200,00 $** (+0,0 %) | 200,06 $ (+0,0 %) | 0 |
+| [**ETH avec filtre de fond**](eth-filtre/README.md) | ⚪ Hors position | **200,00 $** (+0,0 %) | 198,96 $ (−0,5 %) | 0 |
+| [**SOL avec filtre de fond**](sol-filtre/README.md) | ⚪ Hors position | **200,00 $** (+0,0 %) | 198,96 $ (−0,5 %) | 0 |
 
-## Prochain signal
+Clique sur le nom d'une simulation pour voir son tableau de bord complet : prochain signal, graphiques et transactions.
 
-- Moyenne 10 jours : **2 947 $** · Moyenne 30 jours : **3 180 $** (la moyenne courte est 7,3 % en dessous de la longue)
-- Un signal d'achat dès ce soir est **impossible** : il faudra plusieurs jours de hausse pour que la moyenne 10 jours remonte au-dessus de la moyenne 30 jours.
+- **ETH, bot actuel** : La stratégie de départ : croisement des moyennes 10 et 30 jours.
+- **ETH avec filtre de fond** : Même stratégie, mais le bot n'achète que si le prix est aussi au-dessus de sa moyenne 100 jours.
+- **SOL avec filtre de fond** : Solana, avec le filtre de fond 100 jours.
 
-Les moyennes ne changent qu'une fois par jour, à la clôture de la bougie quotidienne. Entre-temps, seul le prix bouge.
+## Valeur de chaque simulation
 
-## Prix et moyennes
+![Valeur de chaque simulation](graphiques/comparaison.svg)
 
-![Prix et moyennes](graphiques/prix.svg)
+## Les analyses
 
-## Valeur du bot
-
-![Valeur du bot](graphiques/valeur.svg)
-
-## Transactions
-
-Aucune transaction pour l'instant.
-
-## Derniers réveils
-
-| Heure | Prix | Position | Valeur |
-|---|---|---|---|
-| 15 nov. 10 h 08 | 2 580,35 $ | Hors position | 200,00 $ |
+- [Comparaison de la stratégie sur ETH, BTC, SOL et XRP](COMPARAISON.md)
+- [Test des améliorations : pourquoi le filtre de fond a été retenu](AMELIORATIONS.md)
+- [Instructions](LISEZ-MOI.md)
 
 ---
-Simulation avec 200 $ fictifs, frais de 0,26 % par transaction inclus. Ce n'est pas un conseil financier. Instructions : [LISEZ-MOI.md](LISEZ-MOI.md)
+Chaque simulation démarre avec 200 $ fictifs. Ce n'est pas un conseil financier.
