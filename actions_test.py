@@ -38,7 +38,7 @@ CRISES = [("Crise de 2008", "2007-10-09", "2009-03-09"), ("Krach COVID 2020", "2
 # --------------------------------------------------------------------------
 def fetch(symbol):
     """Retourne {date: (open, high, low, close)} ajustés des dividendes et fractionnements."""
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?range=max&interval=1d"
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?period1=1136073600&period2={int(datetime.now(timezone.utc).timestamp())}&interval=1d"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
         res = json.load(r)["chart"]["result"][0]
@@ -234,6 +234,8 @@ def main():
     for name, long_sym, inv_sym in PAIRS:
         try:
             dates, lb, ib = align(fetch(long_sym), fetch(inv_sym))
+            if len(dates) < 3000:
+                raise ValueError(f"historique quotidien incomplet ({len(dates)} lignes)")
             md += analyse(f"{name} ({long_sym}, inversé : {inv_sym})", dates, lb, ib)
         except Exception as e:
             md += [f"## {name}\n", f"Données indisponibles : {e}\n"]
