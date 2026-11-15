@@ -1,0 +1,31 @@
+name: Test sur les actions
+
+on:
+  workflow_dispatch:          # lancé à la main depuis l'onglet Actions
+
+permissions:
+  contents: write
+
+jobs:
+  actions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Tester la stratégie sur le S&P 500 et le Nasdaq
+        run: python actions_test.py
+
+      - name: Enregistrer le résultat
+        run: |
+          cat ACTIONS.md >> "$GITHUB_STEP_SUMMARY"
+          git config user.name "bot-simulation"
+          git config user.email "bot-simulation@users.noreply.github.com"
+          git add ACTIONS.md
+          git diff --cached --quiet || git commit -m "Test sur les actions"
+          git pull --rebase
+          git push
