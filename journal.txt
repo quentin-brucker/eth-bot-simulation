@@ -16,3 +16,15 @@ Tableau de bord mis à jour : valeur 200.00, prix 2594.59, 1 réveils enregistr�
 [2026-11-15 10:51:36] Premier lancement. Valeur de départ : 200.00. En attente d'un signal d'achat.
 [2026-11-15 10:51:36] Prix 102.00 | moyennes 118.81/133.43 | hors position | valeur 200.00
 Tableau de bord mis à jour : valeur 200.00, prix 102.00, 1 réveils enregistrés.
+=== ETH, bot actuel ===
+[2026-11-15 14:01:41] Mode PAPER | ETH/CAD | bougies 1d | frais maker 0.16 % / taker 0.26 %
+[2026-11-15 14:01:43] Prix 2598.61 | moyennes 2947.08/3180.45 | hors position | valeur 200.00
+Tableau de bord mis à jour : valeur 200.00, prix 2598.61, 3 réveils enregistrés.
+=== ETH avec filtre de fond ===
+[2026-11-15 14:01:45] Mode PAPER | ETH/CAD | bougies 1d | frais maker 0.16 % / taker 0.26 %
+[2026-11-15 14:01:47] Prix 2598.61 | moyennes 2947.08/3180.45 | hors position | valeur 200.00
+Tableau de bord mis à jour : valeur 200.00, prix 2598.61, 2 réveils enregistrés.
+=== SOL avec filtre de fond ===
+[2026-11-15 14:01:49] Mode PAPER | SOL/CAD | bougies 1d | frais maker 0.16 % / taker 0.26 %
+[2026-11-15 14:01:52] Prix 101.88 | moyennes 118.81/133.43 | hors position | valeur 200.00
+Tableau de bord mis à jour : valeur 200.00, prix 101.88, 2 réveils enregistrés.
