@@ -1,0 +1,49 @@
+name: Simulation bot ETH
+
+on:
+  schedule:
+    - cron: '7,37 * * * *'   # toutes les 30 minutes (à :07 et :37)
+  workflow_dispatch:          # bouton "Run workflow" pour lancer à la main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: simulation
+  cancel-in-progress: false
+
+jobs:
+  simulation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      TZ: America/Toronto
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+
+      - name: Installer la bibliothèque
+        run: pip install -r requirements.txt
+
+      - name: Un passage du bot (argent fictif)
+        shell: bash
+        run: |
+          set -o pipefail
+          python bot.py paper --once 2>&1 | tee -a journal.txt
+
+      - name: Mettre à jour le tableau de bord
+        continue-on-error: true
+        run: python dashboard.py
+
+      - name: Enregistrer l'état et le journal
+        if: always()
+        run: |
+          git config user.name "bot-simulation"
+          git config user.email "bot-simulation@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Simulation : mise à jour"
+          git push
