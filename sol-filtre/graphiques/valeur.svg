@@ -11,17 +11,17 @@
 <line x1="78" y1="241.0" x2="882" y2="241.0" stroke="#eaeef2"/>
 <text x="70" y="245.0" font-size="11" fill="#57606a" text-anchor="end">199 $</text>
 <line x1="78" y1="180.0" x2="882" y2="180.0" stroke="#eaeef2"/>
-<text x="70" y="184.0" font-size="11" fill="#57606a" text-anchor="end">199 $</text>
+<text x="70" y="184.0" font-size="11" fill="#57606a" text-anchor="end">200 $</text>
 <line x1="78" y1="119.0" x2="882" y2="119.0" stroke="#eaeef2"/>
-<text x="70" y="123.0" font-size="11" fill="#57606a" text-anchor="end">200 $</text>
+<text x="70" y="123.0" font-size="11" fill="#57606a" text-anchor="end">201 $</text>
 <line x1="78" y1="58.0" x2="882" y2="58.0" stroke="#eaeef2"/>
-<text x="70" y="62.0" font-size="11" fill="#57606a" text-anchor="end">200 $</text>
+<text x="70" y="62.0" font-size="11" fill="#57606a" text-anchor="end">201 $</text>
 <text x="78.0" y="326" font-size="11" fill="#57606a" text-anchor="start">10 h 51</text>
-<text x="238.8" y="326" font-size="11" fill="#57606a" text-anchor="middle">11 h 45</text>
-<text x="399.6" y="326" font-size="11" fill="#57606a" text-anchor="middle">12 h 38</text>
-<text x="560.4" y="326" font-size="11" fill="#57606a" text-anchor="middle">13 h 32</text>
-<text x="721.2" y="326" font-size="11" fill="#57606a" text-anchor="middle">14 h 26</text>
-<text x="882.0" y="326" font-size="11" fill="#57606a" text-anchor="end">15 h 19</text>
-<polyline points="78.0,74.8 648.0,74.8 882.0,74.8" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
-<polyline points="78.0,246.5 648.0,285.2 882.0,204.6" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4"/>
+<text x="238.8" y="326" font-size="11" fill="#57606a" text-anchor="middle">12 h 33</text>
+<text x="399.6" y="326" font-size="11" fill="#57606a" text-anchor="middle">14 h 14</text>
+<text x="560.4" y="326" font-size="11" fill="#57606a" text-anchor="middle">15 h 56</text>
+<text x="721.2" y="326" font-size="11" fill="#57606a" text-anchor="middle">17 h 37</text>
+<text x="882.0" y="326" font-size="11" fill="#57606a" text-anchor="end">19 h 19</text>
+<polyline points="78.0,176.2 379.2,176.2 502.9,176.2 882.0,176.2" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="78.0,265.1 379.2,285.2 502.9,243.4 882.0,74.8" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4"/>
 </svg>
