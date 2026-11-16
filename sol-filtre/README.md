@@ -2,14 +2,14 @@
 
 Solana, avec le filtre de fond 100 jours.
 
-Mis à jour le **15 nov. 2026 à 19 h 19** (heure de Montréal). Le bot se réveille environ toutes les 30 minutes ; GitHub a souvent du retard.
+Mis à jour le **16 nov. 2026 à 2 h 11** (heure de Montréal). Le bot se réveille environ toutes les 30 minutes ; GitHub a souvent du retard.
 
 | | |
 |---|---|
 | Statut | ⚪ **Hors position** (en attente d'un signal d'achat) |
 | Valeur du bot | **200,00 $** (+0,0 % depuis le départ) |
-| Si tu avais acheté et gardé | 201,19 $ (+0,6 %) |
-| Prix SOL/CAD | 103,14 $ |
+| Si tu avais acheté et gardé | 198,55 $ (−0,7 %) |
+| Prix SOL/CAD | 101,79 $ |
 | Transactions | 0 · frais payés : 0,00 $ |
 
 ## Prochain signal
@@ -36,6 +36,7 @@ Aucune transaction pour l'instant.
 
 | Heure | Prix | Position | Valeur |
 |---|---|---|---|
+| 16 nov. 2 h 11 | 101,79 $ | Hors position | 200,00 $ |
 | 15 nov. 19 h 19 | 103,14 $ | Hors position | 200,00 $ |
 | 15 nov. 15 h 19 | 102,13 $ | Hors position | 200,00 $ |
 | 15 nov. 14 h 01 | 101,88 $ | Hors position | 200,00 $ |
