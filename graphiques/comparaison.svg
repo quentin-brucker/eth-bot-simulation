@@ -19,12 +19,12 @@
 <line x1="78" y1="58.0" x2="882" y2="58.0" stroke="#eaeef2"/>
 <text x="70" y="62.0" font-size="11" fill="#57606a" text-anchor="end">204 $</text>
 <text x="78.0" y="326" font-size="11" fill="#57606a" text-anchor="start">10 h 08</text>
-<text x="238.8" y="326" font-size="11" fill="#57606a" text-anchor="middle">13 h 20</text>
-<text x="399.6" y="326" font-size="11" fill="#57606a" text-anchor="middle">16 h 33</text>
-<text x="560.4" y="326" font-size="11" fill="#57606a" text-anchor="middle">19 h 46</text>
-<text x="721.2" y="326" font-size="11" fill="#57606a" text-anchor="middle">22 h 58</text>
-<text x="882.0" y="326" font-size="11" fill="#57606a" text-anchor="end">2 h 11</text>
-<polyline points="78.0,180.0 114.0,180.0 272.8,180.0 338.0,180.0 537.9,180.0 881.9,180.0" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
-<polyline points="114.0,180.0 272.9,180.0 338.1,180.0 538.0,180.0 881.9,180.0" fill="none" stroke="#0969da" stroke-width="2.5" stroke-linejoin="round"/>
-<polyline points="114.1,180.0 272.9,180.0 338.1,180.0 538.0,180.0 882.0,180.0" fill="none" stroke="#bf8700" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="238.8" y="326" font-size="11" fill="#57606a" text-anchor="middle">15 h 23</text>
+<text x="399.6" y="326" font-size="11" fill="#57606a" text-anchor="middle">20 h 38</text>
+<text x="560.4" y="326" font-size="11" fill="#57606a" text-anchor="middle">1 h 52</text>
+<text x="721.2" y="326" font-size="11" fill="#57606a" text-anchor="middle">7 h 07</text>
+<text x="882.0" y="326" font-size="11" fill="#57606a" text-anchor="end">12 h 22</text>
+<polyline points="78.0,180.0 100.0,180.0 197.2,180.0 237.1,180.0 359.4,180.0 569.8,180.0 881.9,180.0" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="100.1,180.0 197.2,180.0 237.1,180.0 359.4,180.0 569.9,180.0 882.0,180.0" fill="none" stroke="#0969da" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="100.1,180.0 197.3,180.0 237.2,180.0 359.5,180.0 569.9,180.0 882.0,180.0" fill="none" stroke="#bf8700" stroke-width="2.5" stroke-linejoin="round"/>
 </svg>

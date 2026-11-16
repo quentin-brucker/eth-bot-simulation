@@ -64,3 +64,15 @@ Tableau de bord mis à jour : valeur 200.00, prix 2595.93, 5 réveils enregistr�
 [2026-11-16 02:11:29] Mode PAPER | SOL/CAD | bougies 1d | frais maker 0.16 % / taker 0.26 %
 [2026-11-16 02:11:32] Prix 101.79 | moyennes 116.66/131.96 | hors position | valeur 200.00
 Tableau de bord mis à jour : valeur 200.00, prix 101.79, 5 réveils enregistrés.
+=== ETH, bot actuel ===
+[2026-11-16 12:22:24] Mode PAPER | ETH/CAD | bougies 1d | frais maker 0.16 % / taker 0.26 %
+[2026-11-16 12:22:26] Prix 2619.82 | moyennes 2895.74/3153.64 | hors position | valeur 200.00
+Tableau de bord mis à jour : valeur 200.00, prix 2619.82, 7 réveils enregistrés.
+=== ETH avec filtre de fond ===
+[2026-11-16 12:22:28] Mode PAPER | ETH/CAD | bougies 1d | frais maker 0.16 % / taker 0.26 %
+[2026-11-16 12:22:30] Prix 2619.82 | moyennes 2895.74/3153.64 | hors position | valeur 200.00
+Tableau de bord mis à jour : valeur 200.00, prix 2619.82, 6 réveils enregistrés.
+=== SOL avec filtre de fond ===
+[2026-11-16 12:22:33] Mode PAPER | SOL/CAD | bougies 1d | frais maker 0.16 % / taker 0.26 %
+[2026-11-16 12:22:35] Prix 102.84 | moyennes 116.66/131.96 | hors position | valeur 200.00
+Tableau de bord mis à jour : valeur 200.00, prix 102.84, 6 réveils enregistrés.

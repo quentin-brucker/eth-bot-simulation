@@ -9,19 +9,19 @@
 <line x1="78" y1="302.0" x2="882" y2="302.0" stroke="#eaeef2"/>
 <text x="70" y="306.0" font-size="11" fill="#57606a" text-anchor="end">199 $</text>
 <line x1="78" y1="241.0" x2="882" y2="241.0" stroke="#eaeef2"/>
-<text x="70" y="245.0" font-size="11" fill="#57606a" text-anchor="end">199 $</text>
+<text x="70" y="245.0" font-size="11" fill="#57606a" text-anchor="end">200 $</text>
 <line x1="78" y1="180.0" x2="882" y2="180.0" stroke="#eaeef2"/>
 <text x="70" y="184.0" font-size="11" fill="#57606a" text-anchor="end">200 $</text>
 <line x1="78" y1="119.0" x2="882" y2="119.0" stroke="#eaeef2"/>
-<text x="70" y="123.0" font-size="11" fill="#57606a" text-anchor="end">200 $</text>
+<text x="70" y="123.0" font-size="11" fill="#57606a" text-anchor="end">201 $</text>
 <line x1="78" y1="58.0" x2="882" y2="58.0" stroke="#eaeef2"/>
-<text x="70" y="62.0" font-size="11" fill="#57606a" text-anchor="end">201 $</text>
+<text x="70" y="62.0" font-size="11" fill="#57606a" text-anchor="end">202 $</text>
 <text x="78.0" y="326" font-size="11" fill="#57606a" text-anchor="start">10 h 08</text>
-<text x="238.8" y="326" font-size="11" fill="#57606a" text-anchor="middle">13 h 20</text>
-<text x="399.6" y="326" font-size="11" fill="#57606a" text-anchor="middle">16 h 33</text>
-<text x="560.4" y="326" font-size="11" fill="#57606a" text-anchor="middle">19 h 46</text>
-<text x="721.2" y="326" font-size="11" fill="#57606a" text-anchor="middle">22 h 58</text>
-<text x="882.0" y="326" font-size="11" fill="#57606a" text-anchor="end">2 h 11</text>
-<polyline points="78.0,169.3 114.0,169.3 272.8,169.3 338.0,169.3 538.0,169.3 882.0,169.3" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
-<polyline points="78.0,285.2 114.0,162.7 272.8,128.1 338.0,101.2 538.0,74.8 882.0,151.2" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4"/>
+<text x="238.8" y="326" font-size="11" fill="#57606a" text-anchor="middle">15 h 23</text>
+<text x="399.6" y="326" font-size="11" fill="#57606a" text-anchor="middle">20 h 37</text>
+<text x="560.4" y="326" font-size="11" fill="#57606a" text-anchor="middle">1 h 52</text>
+<text x="721.2" y="326" font-size="11" fill="#57606a" text-anchor="middle">7 h 07</text>
+<text x="882.0" y="326" font-size="11" fill="#57606a" text-anchor="end">12 h 22</text>
+<polyline points="78.0,213.4 100.0,213.4 197.2,213.4 237.1,213.4 359.4,213.4 569.9,213.4 882.0,213.4" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="78.0,285.2 100.0,209.3 197.2,187.9 237.1,171.2 359.4,154.8 569.9,202.1 882.0,74.8" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4"/>
 </svg>
