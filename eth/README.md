@@ -2,14 +2,14 @@
 
 La stratégie de départ : croisement des moyennes 10 et 30 jours.
 
-Mis à jour le **17 nov. 2026 à 20 h 14** (heure de Montréal). Le bot se réveille environ toutes les 30 minutes ; GitHub a souvent du retard.
+Mis à jour le **18 nov. 2026 à 4 h 02** (heure de Montréal). Le bot se réveille environ toutes les 30 minutes ; GitHub a souvent du retard.
 
 | | |
 |---|---|
 | Statut | ⚪ **Hors position** (en attente d'un signal d'achat) |
 | Valeur du bot | **200,00 $** (+0,0 % depuis le départ) |
-| Si tu avais acheté et gardé | 200,29 $ (+0,1 %) |
-| Prix ETH/CAD | 2 597,53 $ |
+| Si tu avais acheté et gardé | 200,57 $ (+0,3 %) |
+| Prix ETH/CAD | 2 601,17 $ |
 | Transactions | 0 · frais payés : 0,00 $ |
 
 ## Prochain signal
@@ -35,6 +35,7 @@ Aucune transaction pour l'instant.
 
 | Heure | Prix | Position | Valeur |
 |---|---|---|---|
+| 18 nov. 4 h 02 | 2 601,17 $ | Hors position | 200,00 $ |
 | 17 nov. 20 h 14 | 2 597,53 $ | Hors position | 200,00 $ |
 | 17 nov. 13 h 27 | 2 573,00 $ | Hors position | 200,00 $ |
 | 17 nov. 4 h 02 | 2 594,50 $ | Hors position | 200,00 $ |
@@ -42,7 +43,6 @@ Aucune transaction pour l'instant.
 | 16 nov. 12 h 22 | 2 619,82 $ | Hors position | 200,00 $ |
 | 16 nov. 2 h 11 | 2 595,93 $ | Hors position | 200,00 $ |
 | 15 nov. 19 h 19 | 2 604,81 $ | Hors position | 200,00 $ |
-| 15 nov. 15 h 19 | 2 601,74 $ | Hors position | 200,00 $ |
 
 ---
 Simulation avec 200 $ fictifs, frais de 0,26 % par transaction inclus. Ce n'est pas un conseil financier. Instructions : [LISEZ-MOI.md](../LISEZ-MOI.md) · [Retour au résumé](../README.md)
