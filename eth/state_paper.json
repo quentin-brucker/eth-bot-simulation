@@ -1,10 +1,10 @@
 {
   "cash": 200.0,
   "eth": 0.0,
-  "last_bar_ts": 1794873600000,
+  "last_bar_ts": 1794960000000,
   "target_long": false,
   "armed": true,
-  "bars_since_exit": 1002,
+  "bars_since_exit": 1003,
   "entry": null,
   "start_equity": 200.0,
   "halted": false,
