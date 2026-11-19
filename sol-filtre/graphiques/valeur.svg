@@ -18,10 +18,10 @@
 <text x="70" y="62.0" font-size="11" fill="#57606a" text-anchor="end">210 $</text>
 <text x="78.0" y="326" font-size="11" fill="#57606a" text-anchor="start">15 nov.</text>
 <text x="238.8" y="326" font-size="11" fill="#57606a" text-anchor="middle">16 nov.</text>
-<text x="399.6" y="326" font-size="11" fill="#57606a" text-anchor="middle">16 nov.</text>
+<text x="399.6" y="326" font-size="11" fill="#57606a" text-anchor="middle">17 nov.</text>
 <text x="560.4" y="326" font-size="11" fill="#57606a" text-anchor="middle">17 nov.</text>
 <text x="721.2" y="326" font-size="11" fill="#57606a" text-anchor="middle">18 nov.</text>
 <text x="882.0" y="326" font-size="11" fill="#57606a" text-anchor="end">19 nov.</text>
-<polyline points="78.0,256.0 107.0,256.0 118.9,256.0 155.3,256.0 218.1,256.0 311.2,256.0 380.9,256.0 454.4,256.0 540.4,256.0 602.3,256.0 673.6,256.0 755.1,256.0 812.4,256.0 882.0,256.0" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
-<polyline points="78.0,276.9 107.0,281.6 118.9,271.8 155.3,232.2 218.1,285.2 311.2,244.0 380.9,269.1 454.4,207.5 540.4,199.2 602.3,78.0 673.6,74.8 755.1,138.8 812.4,156.5 882.0,79.9" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4"/>
+<polyline points="78.0,256.0 104.2,256.0 114.9,256.0 147.9,256.0 204.5,256.0 288.6,256.0 351.6,256.0 417.9,256.0 495.7,256.0 551.6,256.0 615.9,256.0 689.5,256.0 741.3,256.0 804.2,256.0 882.0,256.0" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="78.0,276.9 104.2,281.6 114.9,271.8 147.9,232.2 204.5,285.2 288.6,244.0 351.6,269.1 417.9,207.5 495.7,199.2 551.6,78.0 615.9,74.8 689.5,138.8 741.3,156.5 804.2,79.9 882.0,185.1" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4"/>
 </svg>
