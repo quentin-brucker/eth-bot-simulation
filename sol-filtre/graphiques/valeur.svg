@@ -7,13 +7,13 @@
 <line x1="209" y1="42" x2="231" y2="42" stroke="#8c959f" stroke-width="2.5" stroke-dasharray="6 4"/>
 <text x="237" y="46" font-size="12" fill="#57606a">Si tu avais acheté et gardé</text>
 <line x1="78" y1="302.0" x2="882" y2="302.0" stroke="#eaeef2"/>
-<text x="70" y="306.0" font-size="11" fill="#57606a" text-anchor="end">198 $</text>
+<text x="70" y="306.0" font-size="11" fill="#57606a" text-anchor="end">189 $</text>
 <line x1="78" y1="241.0" x2="882" y2="241.0" stroke="#eaeef2"/>
-<text x="70" y="245.0" font-size="11" fill="#57606a" text-anchor="end">201 $</text>
+<text x="70" y="245.0" font-size="11" fill="#57606a" text-anchor="end">194 $</text>
 <line x1="78" y1="180.0" x2="882" y2="180.0" stroke="#eaeef2"/>
-<text x="70" y="184.0" font-size="11" fill="#57606a" text-anchor="end">204 $</text>
+<text x="70" y="184.0" font-size="11" fill="#57606a" text-anchor="end">200 $</text>
 <line x1="78" y1="119.0" x2="882" y2="119.0" stroke="#eaeef2"/>
-<text x="70" y="123.0" font-size="11" fill="#57606a" text-anchor="end">207 $</text>
+<text x="70" y="123.0" font-size="11" fill="#57606a" text-anchor="end">205 $</text>
 <line x1="78" y1="58.0" x2="882" y2="58.0" stroke="#eaeef2"/>
 <text x="70" y="62.0" font-size="11" fill="#57606a" text-anchor="end">210 $</text>
 <text x="78.0" y="326" font-size="11" fill="#57606a" text-anchor="start">15 nov.</text>
@@ -22,6 +22,6 @@
 <text x="560.4" y="326" font-size="11" fill="#57606a" text-anchor="middle">18 nov.</text>
 <text x="721.2" y="326" font-size="11" fill="#57606a" text-anchor="middle">19 nov.</text>
 <text x="882.0" y="326" font-size="11" fill="#57606a" text-anchor="end">20 nov.</text>
-<polyline points="78.0,256.0 100.9,256.0 110.4,256.0 139.2,256.0 188.9,256.0 262.6,256.0 317.9,256.0 376.0,256.0 444.1,256.0 493.2,256.0 549.6,256.0 614.1,256.0 659.5,256.0 714.6,256.0 782.8,256.0 829.7,256.0 882.0,256.0" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
-<polyline points="78.0,276.9 100.9,281.6 110.4,271.8 139.2,232.2 188.9,285.2 262.6,244.0 317.9,269.1 376.0,207.5 444.1,199.2 493.2,78.0 549.6,74.8 614.1,138.8 659.5,156.5 714.6,79.9 782.8,185.1 829.7,158.8 882.0,195.3" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4"/>
+<polyline points="78.0,176.7 99.2,176.7 107.9,176.7 134.6,176.7 180.6,176.7 248.7,176.7 299.8,176.7 353.5,176.7 416.6,176.7 461.9,176.7 514.1,176.7 573.7,176.7 615.7,176.7 666.6,176.7 729.7,176.7 773.1,176.7 821.4,176.7 882.0,176.7" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="78.0,188.5 99.2,191.1 107.9,185.6 134.6,163.3 180.6,193.1 248.7,170.0 299.8,184.1 353.5,149.4 416.6,144.8 461.9,76.6 514.1,74.8 573.7,110.8 615.7,120.7 666.6,77.7 729.7,136.8 773.1,122.1 821.4,142.6 882.0,285.2" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4"/>
 </svg>
