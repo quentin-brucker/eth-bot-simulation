@@ -18,10 +18,10 @@
 <text x="70" y="62.0" font-size="11" fill="#57606a" text-anchor="end">216 $</text>
 <text x="78.0" y="326" font-size="11" fill="#57606a" text-anchor="start">15 nov.</text>
 <text x="238.8" y="326" font-size="11" fill="#57606a" text-anchor="middle">16 nov.</text>
-<text x="399.6" y="326" font-size="11" fill="#57606a" text-anchor="middle">17 nov.</text>
+<text x="399.6" y="326" font-size="11" fill="#57606a" text-anchor="middle">18 nov.</text>
 <text x="560.4" y="326" font-size="11" fill="#57606a" text-anchor="middle">19 nov.</text>
 <text x="721.2" y="326" font-size="11" fill="#57606a" text-anchor="middle">20 nov.</text>
-<text x="882.0" y="326" font-size="11" fill="#57606a" text-anchor="end">21 nov.</text>
-<polyline points="78.0,97.9 94.7,97.9 101.6,97.9 122.7,97.9 158.9,97.9 212.6,97.9 252.9,97.9 295.3,97.9 345.0,97.9 380.7,97.9 421.9,97.9 468.9,97.9 502.0,97.9 542.2,97.9 592.0,97.9 626.1,97.9 664.3,97.9 712.0,97.9 746.8,97.9 774.6,97.9 819.9,97.9 858.0,97.9 882.0,97.9" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
-<polyline points="78.0,100.5 94.7,101.1 101.6,99.9 122.7,94.9 158.9,101.6 212.6,96.4 252.9,99.5 295.3,91.7 345.0,90.7 380.7,75.2 421.9,74.8 468.9,83.0 502.0,85.2 542.2,75.5 592.0,88.9 626.1,85.5 664.3,90.2 712.0,122.4 746.8,174.2 774.6,285.2 819.9,121.7 858.0,106.9 882.0,111.0" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4"/>
+<text x="882.0" y="326" font-size="11" fill="#57606a" text-anchor="end">22 nov.</text>
+<polyline points="78.0,97.9 94.0,97.9 100.5,97.9 120.7,97.9 155.3,97.9 206.6,97.9 245.1,97.9 285.6,97.9 333.1,97.9 367.2,97.9 406.6,97.9 451.5,97.9 483.1,97.9 521.5,97.9 569.1,97.9 601.7,97.9 638.2,97.9 683.8,97.9 717.0,97.9 743.6,97.9 786.8,97.9 823.3,97.9 846.2,97.9 882.0,97.9" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="78.0,100.5 94.0,101.1 100.5,99.9 120.7,94.9 155.3,101.6 206.6,96.4 245.1,99.5 285.6,91.7 333.1,90.7 367.2,75.2 406.6,74.8 451.5,83.0 483.1,85.2 521.5,75.5 569.1,88.9 601.7,85.5 638.2,90.2 683.8,122.4 717.0,174.2 743.6,285.2 786.8,121.7 823.3,106.9 846.2,111.0 882.0,119.6" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4"/>
 </svg>
