@@ -1,12 +1,12 @@
 # Simulations du bot (argent fictif)
 
-Mis à jour le **23 nov. 2026 à 6 h 09** (heure de Montréal). Les bots se réveillent environ toutes les 30 minutes ; GitHub a souvent du retard.
+Mis à jour le **23 nov. 2026 à 17 h 53** (heure de Montréal). Les bots se réveillent environ toutes les 30 minutes ; GitHub a souvent du retard.
 
 | Simulation | Statut | Valeur | Si tu avais acheté et gardé | Transactions |
 |---|---|---|---|---|
-| [**ETH, bot actuel**](eth/README.md) | ⚪ Hors position | **200,00 $** (+0,0 %) | 190,16 $ (−4,9 %) | 0 |
-| [**ETH avec filtre de fond**](eth-filtre/README.md) | ⚪ Hors position | **200,00 $** (+0,0 %) | 189,12 $ (−5,4 %) | 0 |
-| [**SOL avec filtre de fond**](sol-filtre/README.md) | ⚪ Hors position | **200,00 $** (+0,0 %) | 201,32 $ (+0,7 %) | 0 |
+| [**ETH, bot actuel**](eth/README.md) | ⚪ Hors position | **200,00 $** (+0,0 %) | 188,91 $ (−5,5 %) | 0 |
+| [**ETH avec filtre de fond**](eth-filtre/README.md) | ⚪ Hors position | **200,00 $** (+0,0 %) | 187,87 $ (−6,1 %) | 0 |
+| [**SOL avec filtre de fond**](sol-filtre/README.md) | ⚪ Hors position | **200,00 $** (+0,0 %) | 200,76 $ (+0,4 %) | 0 |
 
 Clique sur le nom d'une simulation pour voir son tableau de bord complet : prochain signal, graphiques et transactions.
 
