@@ -2,14 +2,14 @@
 
 Solana, avec le filtre de fond 100 jours.
 
-Mis à jour le **22 nov. 2026 à 21 h 31** (heure de Montréal). Le bot se réveille environ toutes les 30 minutes ; GitHub a souvent du retard.
+Mis à jour le **23 nov. 2026 à 6 h 09** (heure de Montréal). Le bot se réveille environ toutes les 30 minutes ; GitHub a souvent du retard.
 
 | | |
 |---|---|
 | Statut | ⚪ **Hors position** (en attente d'un signal d'achat) |
 | Valeur du bot | **200,00 $** (+0,0 % depuis le départ) |
-| Si tu avais acheté et gardé | 196,41 $ (−1,8 %) |
-| Prix SOL/CAD | 100,69 $ |
+| Si tu avais acheté et gardé | 201,32 $ (+0,7 %) |
+| Prix SOL/CAD | 103,21 $ |
 | Transactions | 0 · frais payés : 0,00 $ |
 
 ## Prochain signal
@@ -36,6 +36,7 @@ Aucune transaction pour l'instant.
 
 | Heure | Prix | Position | Valeur |
 |---|---|---|---|
+| 23 nov. 6 h 09 | 103,21 $ | Hors position | 200,00 $ |
 | 22 nov. 21 h 31 | 100,69 $ | Hors position | 200,00 $ |
 | 22 nov. 16 h 41 | 100,72 $ | Hors position | 200,00 $ |
 | 22 nov. 10 h 37 | 100,00 $ | Hors position | 200,00 $ |
@@ -43,7 +44,6 @@ Aucune transaction pour l'instant.
 | 21 nov. 19 h 15 | 99,90 $ | Hors position | 200,00 $ |
 | 21 nov. 14 h 43 | 100,72 $ | Hors position | 200,00 $ |
 | 21 nov. 7 h 28 | 97,76 $ | Hors position | 200,00 $ |
-| 20 nov. 22 h 54 | 65,03 $ | Hors position | 200,00 $ |
 
 ---
 Simulation avec 200 $ fictifs, frais de 0,26 % par transaction inclus. Ce n'est pas un conseil financier. Instructions : [LISEZ-MOI.md](../LISEZ-MOI.md) · [Retour au résumé](../README.md)
